@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>To-do</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>To-do List</h1>
+    <p class="sub" id="subline">0 tasks left</p>
+
+    <form id="addForm">
+      <input id="taskInput" type="text" placeholder="Add a new task..." autocomplete="off" maxlength="140">
+      <button id="addBtn" type="submit">Add</button>
+    </form>
+
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-filter="all" type="button">All</button>
+      <button class="tab" data-filter="active" type="button">Active</button>
+      <button class="tab" data-filter="done" type="button">Done</button>
+    </div>
+
+    <ul id="list"></ul>
+    <p class="empty" id="emptyMsg" style="display:none;">Nothing here yet.</p>
+
+    <footer>
+      <span id="countLine"></span>
+      <button class="clear" id="clearBtn" type="button">Clear completed</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

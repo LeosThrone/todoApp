@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #e8dcc0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #4b3621;
+}
+
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fbf3df;
+  border: 1px solid #c9b688;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0 0 4px 0;
+}
+
+.sub {
+  font-size: 13px;
+  color: #8a7a5c;
+  margin: 0 0 16px 0;
+}
+
+form {
+  margin-bottom: 16px;
+}
+
+#taskInput {
+  width: 65%;
+  padding: 8px;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  border: 1px solid #c9b688;
+  background-color: #fff;
+  color: #4b3621;
+}
+
+#addBtn {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: 1px solid #6b4423;
+  background-color: #6b4423;
+  color: #fbf3df;
+  cursor: pointer;
+}
+
+#addBtn:hover {
+  background-color: #543318;
+}
+
+.tabs {
+  margin-bottom: 10px;
+}
+
+.tab {
+  border: 1px solid #c9b688;
+  background-color: #fbf3df;
+  color: #4b3621;
+  padding: 4px 10px;
+  margin-right: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background-color: #c9b688;
+  color: #fff;
+}
+
+ul#list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.task {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #d9c9a0;
+}
+
+.check {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #6b4423;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+li.done .check {
+  background-color: #6b4423;
+}
+
+.text {
+  flex: 1;
+  font-size: 14px;
+}
+
+li.done .text {
+  text-decoration: line-through;
+  color: #8a7a5c;
+}
+
+.del {
+  border: none;
+  background: none;
+  color: #a3342a;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.empty {
+  font-size: 13px;
+  color: #8a7a5c;
+  padding: 10px 0;
+}
+
+footer {
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 1px solid #d9c9a0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #8a7a5c;
+}
+
+.clear {
+  border: none;
+  background: none;
+  color: #8a7a5c;
+  text-decoration: underline;
+  cursor: pointer;
+}
